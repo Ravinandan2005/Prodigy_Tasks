@@ -1,0 +1,61 @@
+/* Base styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+}
+
+#home { background-color: #f8f9fa; }
+#about { background-color: #e9ecef; }
+#services { background-color: #dee2e6; }
+#contact { background-color: #ced4da; }
+
+/* Navigation bar styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 10px 20px;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-list li {
+  margin: 0 15px;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+  color: #007bff;
+}
+
+/* Change navbar style on scroll */
+.navbar.scrolled {
+  background-color: #007bff;
+}
+
+.navbar.scrolled a {
+  color: white;
+}
